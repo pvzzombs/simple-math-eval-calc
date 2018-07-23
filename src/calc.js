@@ -136,13 +136,13 @@ function t(a) {
       switch (a[i].value) {
       case "+":
         {
-          x[x.length - 2] = parseFloat(x[x.length - 2] + x[x.length - 1]);
+          x[x.length - 2] = parseFloat(((x[x.length - 2]*10000) + (x[x.length - 1]*10000)) / 10000);
           x.pop();
           break;
         }
       case "-":
         {
-          x[x.length - 2] = parseFloat(x[x.length - 2] - x[x.length - 1]);
+          x[x.length - 2] = parseFloat(((x[x.length - 2]*10000) - (x[x.length - 1]*10000)) / 10000);
           x.pop();
           break;
         }
