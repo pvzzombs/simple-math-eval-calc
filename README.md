@@ -1,10 +1,10 @@
 # simple-math-eval-calc
 A simple, small, and alternative code to replace javascript native ``eval()`` function.
 
-### Ability
-It can accept mathematical expression (numerical expressions) based on a string only.
+### Purpose
+Accept mathematical expression (numerical expressions) based on a string only.
 
-### The Operations It Accept 
+### Operations  
 It currently accepts: 
 <ul>
   <li> Addition </li>
@@ -19,7 +19,7 @@ It currently accepts:
 2. Include ``src/calc.js`` by adding it as a script in your ``HTML`` file.  
 3. Use it!  
 
-### Examples of use 
+### Example 
 ```javascript
 Eval(" 1 + 1"); //returns 2
 Eval("10 - 5"); //returns 5
