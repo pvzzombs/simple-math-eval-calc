@@ -111,7 +111,7 @@ function c(token) {
     } else if (x.type == "Operator") {
       while (last && last.value != "(" && (x.prec < last.prec || x.asso == "left" && x.prec == last.prec)) {
         output.push(stack.pop());
-        last = stack.length ? stack[stack.length] : false;
+        last = stack.length ? stack[stack.length - 1] : false;
       }
       stack.push(x);
     } else if (x.type == "Left Parenthesis") {
